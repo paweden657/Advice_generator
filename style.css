@@ -1,0 +1,117 @@
+:root {
+    --clr-primary-light-cyan: hsl(193, 38%, 86%);
+    --clr-primary-neon-green: hsl(150, 100%, 66%);
+
+    --clr-primary-neon-green-hsl: 150, 100%;
+
+    --clr-neutral-grayish-blue: hsl(217, 19%, 38%);
+    --clr-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+    --clr-neutral-dark-blue: hsl(218, 23%, 16%);
+
+    --fs: 28px;
+    
+    --ff: 'Manrope', sans-serif;
+
+    --fw: 800;
+}
+body, html {
+    width: 100%;
+
+    min-width: 375px;
+
+    margin: 0;
+
+    font-family: var(--ff);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+
+    color: var(--clr-primary-light-cyan);
+    background-color: var(--clr-neutral-dark-blue);
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 100%;
+
+    padding: 15% 0 15% 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+#advice-field {
+    width: 30%;
+    
+    padding: 2.5%;
+    
+    position: relative;
+
+    border-radius: 10px;
+
+    background-color: var(--clr-neutral-dark-grayish-blue);
+}
+@media only screen and (max-width: 768px) {
+    #advice-field {
+        width: 90%;
+    }
+}
+#advice-number {
+    font-size: 0.7rem;
+
+    margin: 2.5% auto 5% auto;
+
+    color: hsl(var(--clr-primary-neon-green-hsl), 60%);
+}
+#advice {
+    font-size: 0.9rem;
+
+    margin: 0;
+}
+.devider {
+    width: 100%;
+
+    margin: 10% 0 5% 0;
+}
+@media only screen and (max-width: 768px) {
+    #devider-desktop {
+        display: none;
+    }
+    #devider-mobile {
+        display: block;
+        margin-bottom: 7.5%;
+    }
+}
+button {
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: hsl(var(--clr-primary-neon-green-hsl), 60%);
+    border-width: 0;
+}
+button:hover {
+    box-shadow: 0 0 20px hsl(var(--clr-primary-neon-green-hsl), 60%);
+}
+button img {
+    width: 25px;
+}
+.hide {
+    display: none;
+}
