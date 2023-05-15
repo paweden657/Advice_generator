@@ -47,6 +47,8 @@ main {
 }
 #advice-field {
     width: 30%;
+
+    max-width: 900px;
     
     padding: 2.5%;
     
